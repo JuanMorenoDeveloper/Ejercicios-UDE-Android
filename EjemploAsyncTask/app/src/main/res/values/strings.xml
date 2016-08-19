@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EjemploAsyncTask</string>
+    <string name="btn_progressbar">ProgressBar</string>
+    <string name="btn_progressdialog">ProgressDialog</string>
+    <string name="btn_principal">Principal</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_stop">Stop</string>
+</resources>
