@@ -6,15 +6,6 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
-    <!--Progress bar-->
-    <ProgressBar
-        style="?android:attr/progressBarStyleHorizontal"
-        android:id="@+id/pgb_progress"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true" />
     <!--Buton de start-->
     <Button
         android:id="@+id/btn_start"
@@ -24,7 +15,8 @@
         android:layout_below="@+id/pgb_progress"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="@string/btn_start" />
+        android:text="@string/btn_start"
+        android:onClick="startAsyncTask"/>
     <!--Buton de Stop-->
     <Button
         android:id="@+id/btn_stop"
@@ -33,7 +25,8 @@
         android:layout_below="@+id/btn_start"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
-        android:text="@string/btn_stop" />
+        android:text="@string/btn_stop"
+        android:onClick="stopAsyncTask"/>
     <!--Buton de regresar-->
     <Button
         android:id="@+id/btn_principal"
@@ -42,12 +35,14 @@
         android:layout_below="@+id/btn_stop"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
-        android:text="@string/btn_principal" />
+        android:text="@string/btn_principal"
+        android:onClick="back"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tv_progressbar"
+        android:text="@string/tv_progressdialog"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

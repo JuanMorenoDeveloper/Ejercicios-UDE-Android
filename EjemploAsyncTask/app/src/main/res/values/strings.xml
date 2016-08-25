@@ -5,4 +5,7 @@
     <string name="btn_principal">Principal</string>
     <string name="btn_start">Start</string>
     <string name="btn_stop">Stop</string>
+    <string name="tv_principal">Principal</string>
+    <string name="tv_progressbar">Progress Bar</string>
+    <string name="tv_progressdialog">Progress Dialog</string>
 </resources>
