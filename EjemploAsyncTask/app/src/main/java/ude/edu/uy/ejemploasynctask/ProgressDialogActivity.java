@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 public class ProgressDialogActivity extends AppCompatActivity implements UpdatableProgress {
     private BdAsyncTask BdAsyncTask;
@@ -49,4 +50,8 @@ public class ProgressDialogActivity extends AppCompatActivity implements Updatab
         }
     }
 
+    @Override
+    public void cancel() {
+        Toast.makeText(this,"Tarea cancelada",Toast.LENGTH_SHORT).show();
+    }
 }

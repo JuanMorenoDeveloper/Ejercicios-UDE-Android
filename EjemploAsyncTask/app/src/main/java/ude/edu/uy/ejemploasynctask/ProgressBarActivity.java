@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 public class ProgressBarActivity extends AppCompatActivity implements UpdatableProgress {
 
@@ -52,5 +53,10 @@ public class ProgressBarActivity extends AppCompatActivity implements UpdatableP
     public void update(int count) {
         Log.i(TAG, "Progreso asynctask: " + count);
         pgbProgress.setProgress(count);
+    }
+
+    @Override
+    public void cancel() {
+        Toast.makeText(this,"Tarea cancelada",Toast.LENGTH_SHORT).show();
     }
 }

@@ -2,6 +2,7 @@ package ude.edu.uy.ejemploasynctask;
 
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.Toast;
 
 public class TimerAsyncTask extends AsyncTask<Integer/*doInBackground arg*/,
         Integer/*onProgressUpdate*/, Void /*doInBackground return*/> {
@@ -39,5 +40,10 @@ public class TimerAsyncTask extends AsyncTask<Integer/*doInBackground arg*/,
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
+    }
+
+    @Override
+    protected void onCancelled() {
+        updateableProgress.cancel();
     }
 }
