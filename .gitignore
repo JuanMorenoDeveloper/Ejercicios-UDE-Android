@@ -39,5 +39,11 @@ captures/
 .idea/libraries
 .idea
 
+#Eclipse
+target/
+.settings/
+.classpath
+.project
+
 # Keystore files
 *.jks
